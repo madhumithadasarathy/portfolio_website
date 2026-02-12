@@ -39,21 +39,38 @@ export default function Hero() {
         {/* Name + Paragraph Wrapper */}
         <div className="inline-block">
 
-          {/* Name */}
-          <motion.h1
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-            className="
-              font-poppins font-extrabold
-              text-[12vw] sm:text-[13vw] lg:text-[13vw]
-              leading-[0.9]
-              text-gray-200
-              break-words
-            "
-          >
-            MADHUMITHA
-          </motion.h1>
+{/* Name */}
+<motion.h1
+  initial={{ opacity: 0, scale: 0.95 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1 }}
+  className="
+    font-poppins font-extrabold
+    text-[12vw] sm:text-[13vw] lg:text-[13vw]
+    leading-[0.9]
+    text-gray-200
+  "
+>
+  MADHUMITHA
+</motion.h1>
+
+{/* Roles — directly attached */}
+<p className="
+  hidden lg:block
+  font-poppins
+  text-sm
+  text-gray-300
+  mt-2
+">
+  <span>AI Engineer</span>
+  <span className="text-neon mx-[6px]">•</span>
+  <span>Web Developer</span>
+  <span className="text-neon mx-[6px]">•</span>
+  <span>Artist</span>
+  <span className="text-neon mx-[6px]">•</span>
+  <span>Musician</span>
+</p>
+
 
           {/* Intro Paragraph */}
           <motion.p
@@ -110,6 +127,11 @@ export default function Hero() {
 
         </div>
       </div>
+      {/* ===== RIGHT SIDE ROLE TEXT (Desktop Only) ===== */}
+
+
+
+
 
       {/* ===== HERO IMAGE (Hidden on Mobile) ===== */}
       <motion.img
