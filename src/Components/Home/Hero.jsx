@@ -73,7 +73,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        src="/madhu_hero.svg"
+        src="/madhumitha_hero.svg"
         alt="Madhu"
         className="absolute bottom-0 w-[260px] md:w-[400px]"
       />
