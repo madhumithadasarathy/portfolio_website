@@ -5,8 +5,49 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-6 pt-28"
+      className="
+        relative 
+        min-h-screen 
+        flex flex-col 
+        justify-center 
+        items-center 
+        overflow-hidden 
+        px-6 
+        pt-28
+        bg-[radial-gradient(circle_at_center_55%,#1a1a1a_0%,#0a0a0a_45%,#000000_80%)]
+      "
     >
+      {/* ===== Studio Lighting Layer ===== */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+
+        {/* Subject Spotlight */}
+        <div
+          className="
+            absolute 
+            top-[40%] 
+            left-1/2 
+            -translate-x-1/2 
+            w-[800px] 
+            h-[500px] 
+            bg-[#c1ff72]/6 
+            blur-[160px] 
+            rounded-full
+          "
+        />
+
+        {/* Vignette Depth */}
+        <div
+          className="
+            absolute 
+            inset-0 
+            bg-gradient-to-b 
+            from-black/40 
+            via-transparent 
+            to-black/80
+          "
+        />
+      </div>
+
       {/* ===== HERO TEXT CONTENT ===== */}
       <div className="text-center relative z-10">
 
@@ -40,31 +81,39 @@ export default function Hero() {
           AI Engineer <span className="text-neon">•</span> Software Developer{" "}
           <span className="text-neon">•</span> ML Researcher
         </motion.p>
-
       </div>
 
-      {/* ===== HERO IMAGE ===== */}
-<motion.img
-  initial={{ opacity: 0, y: 60 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1 }}
-  src="/madhumitha_hero.svg"
-  alt="Madhumitha"
-  className="absolute bottom-0 left-1/2 -translate-x-1/2 
-             w-[220px] md:w-[320px] 
-             object-contain z-0"
-/>
-
+      {/* ===== HERO IMAGE (NOW ABOVE TEXT) ===== */}
+      <motion.img
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        src="/madhumitha_hero.svg"
+        alt="Madhumitha"
+        className="
+          absolute
+          top-[35%]
+          left-[40%]
+          -translate-x-1/2
+          -translate-y-1/2
+          w-[190px] md:w-[300px]
+          object-contain
+          z-20
+          brightness-85
+          contrast-100
+          saturate-70
+        "
+      />
 
       {/* ===== SOCIAL ICONS ===== */}
-      <div className="absolute bottom-10 left-10 flex gap-5 text-neon text-xl">
+      <div className="absolute bottom-10 left-10 flex gap-5 text-neon text-xl z-30">
         <FaInstagram className="cursor-pointer hover:scale-125 transition" />
         <FaLinkedin className="cursor-pointer hover:scale-125 transition" />
         <FaGithub className="cursor-pointer hover:scale-125 transition" />
       </div>
 
       {/* ===== FOOTER LINK ===== */}
-      <p className="absolute bottom-10 right-10 font-poppins text-sm text-gray-400">
+      <p className="absolute bottom-10 right-10 font-poppins text-sm text-gray-400 z-30">
         github.com/madhumithadasarathy
       </p>
 
