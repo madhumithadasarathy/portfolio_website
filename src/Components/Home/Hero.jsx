@@ -24,7 +24,7 @@ export default function Hero() {
       </div>
 
       {/* ===== HERO TEXT CONTENT ===== */}
-      <div className="relative z-10 -translate-y-24 lg:-translate-y-32">
+      <div className="relative z-10 -translate-y-16 lg:-translate-y-24">
 
         {/* Tagline */}
         <motion.h2
@@ -75,6 +75,38 @@ export default function Hero() {
             intelligent systems that solve real-world problems through machine
             learning, research, and scalable software design.
           </motion.p>
+
+          {/* ===== BUTTONS (ONLY ADDITION) ===== */}
+          <div className="mt-5 flex gap-4 justify-center lg:justify-start">
+            
+            <button className="
+              bg-[#c1ff72]
+              text-black
+              font-poppins
+              px-6 py-2.5
+              rounded-full
+              font-semibold
+              text-sm
+              hover:scale-105
+              transition
+            ">
+              Know More
+            </button>
+
+            <button className="
+              border border-white/40
+              text-white
+              font-poppins
+              px-6 py-2.5
+              rounded-full
+              text-sm
+              hover:bg-white/10
+              transition
+            ">
+              Contact
+            </button>
+
+          </div>
 
         </div>
       </div>
