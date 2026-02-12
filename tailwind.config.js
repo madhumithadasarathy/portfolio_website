@@ -8,7 +8,7 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         anton: ["Anton", "sans-serif"],
-        playlist: ["Playlist Script", "cursive"],
+        playlist: ["Playlist", "cursive"],
       },
     },
   },
