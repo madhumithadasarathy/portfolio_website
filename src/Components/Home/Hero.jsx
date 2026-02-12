@@ -5,35 +5,9 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-6"
+      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-6 pt-28"
     >
-      {/* ===== NAVBAR ===== */}
-      <header className="absolute top-0 left-0 w-full px-10 py-6 flex justify-between items-center">
-        <h1 className="font-anton text-xl tracking-wide text-neon">
-          MADHUMITHA DASARATHY
-        </h1>
-
-        <nav className="hidden md:flex gap-10 font-poppins text-sm">
-          <a href="#home" className="hover:text-neon transition">
-            Home
-          </a>
-          <a href="#projects" className="hover:text-neon transition">
-            Projects
-          </a>
-          <a href="#achievements" className="hover:text-neon transition">
-            Achievements
-          </a>
-          <a href="#contact" className="hover:text-neon transition">
-            Contact
-          </a>
-        </nav>
-
-        <button className="bg-neon text-black px-6 py-2 rounded-full font-poppins font-medium hover:scale-105 transition">
-          Contact
-        </button>
-      </header>
-
-      {/* ===== HERO CENTER CONTENT ===== */}
+      {/* ===== HERO TEXT CONTENT ===== */}
       <div className="text-center relative z-10">
 
         {/* Tagline */}
@@ -51,7 +25,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="font-poppins font-extrabold text-[16vw] md:text-[12vw] leading-none text-gray-200"
+          className="font-poppins font-extrabold text-[15vw] md:text-[11vw] leading-none text-gray-200"
         >
           MADHUMITHA
         </motion.h1>
@@ -66,17 +40,21 @@ export default function Hero() {
           AI Engineer <span className="text-neon">•</span> Software Developer{" "}
           <span className="text-neon">•</span> ML Researcher
         </motion.p>
+
       </div>
 
       {/* ===== HERO IMAGE ===== */}
-      <motion.img
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        src="/madhumitha_hero.svg"
-        alt="Madhu"
-        className="absolute bottom-0 w-[260px] md:w-[400px]"
-      />
+<motion.img
+  initial={{ opacity: 0, y: 60 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  src="/madhumitha_hero.svg"
+  alt="Madhumitha"
+  className="absolute bottom-0 left-1/2 -translate-x-1/2 
+             w-[220px] md:w-[320px] 
+             object-contain z-0"
+/>
+
 
       {/* ===== SOCIAL ICONS ===== */}
       <div className="absolute bottom-10 left-10 flex gap-5 text-neon text-xl">
@@ -89,6 +67,7 @@ export default function Hero() {
       <p className="absolute bottom-10 right-10 font-poppins text-sm text-gray-400">
         github.com/madhumithadasarathy
       </p>
+
     </section>
   );
 }
