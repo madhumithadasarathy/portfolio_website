@@ -1,9 +1,13 @@
+import Expertise from "./Expertise";
 import Hero from "./Hero";
+import Timeline from "./Timeline";
 
 export default function Home() {
   return (
     <main className="bg-black text-white">
       <Hero />
+      <Expertise />
+      <Timeline />
     </main>
   );
 }
